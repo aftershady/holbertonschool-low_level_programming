@@ -1,6 +1,6 @@
 /**
 *main - return nothing
-*Description: ''
+*Description: 'return the size of various initializer'
 *Return: 0
 */
 #include <stdio.h>
