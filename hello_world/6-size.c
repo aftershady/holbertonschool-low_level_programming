@@ -6,14 +6,9 @@
 #include <stdio.h>
 int main(void)
 {
-char _char;
-int _int;
-long _long;
-long long _llong;
-float _float;
-printf("%zu", sizeof(_char));
-printf("%zu", sizeof(_int));
-printf("%zu", sizeof(_long));
-printf("%zu", sizeof(_llong));
-printf("%zu", sizeof(_float));
+printf("%zu", sizeof(char));
+printf("%zu", sizeof(int));
+printf("%zu", sizeof(long));
+printf("%zu", sizeof(long long));
+printf("%zu", sizeof(float));
 }
