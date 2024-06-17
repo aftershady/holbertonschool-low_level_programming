@@ -6,9 +6,9 @@
 #include <stdio.h>
 int main(void)
 {
-printf("%lu", sizeof(char));
-printf("%lu", sizeof(int));
-printf("%lu", sizeof(long));
-printf("%lu", sizeof(long long));
-printf("%lu", sizeof(float));
+printf("Size of a char: %lu byte(s)", sizeof(char));
+printf("Size of a int: %lu byte(s)", sizeof(int));
+printf("Size of a long: %lu byte(s)", sizeof(long));
+printf("Size of a long long: %lu byte(s)", sizeof(long long));
+printf("Size of a float: %lu byte(s)", sizeof(float));
 }
