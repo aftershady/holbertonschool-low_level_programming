@@ -7,11 +7,9 @@
 int main(void)
 {
 int i = 0;
-int c = 0;
 while (i != 10)
 {
-putchar('0' + c);
-c++;
+putchar('0' + i);
 i++;
 }
 printf("\n");
