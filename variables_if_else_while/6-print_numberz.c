@@ -10,7 +10,7 @@ int i = 0;
 int c = 0;
 while (i != 10)
 {
-putchar(c);
+putchar('0' + c);
 c++;
 i++;
 }
