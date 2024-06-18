@@ -6,8 +6,8 @@
 #include <stdio.h>
 int main(void)
 {
-char c = '0';
 int i = 0;
+int c = '0';
 while (i != 10)
 {
 putchar(c);
