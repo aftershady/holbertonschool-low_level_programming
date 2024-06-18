@@ -18,6 +18,7 @@ while(i!=26)
 	alphabet++;
 	i++;
 }
+putchar(lr);
 return 0;
 
 }
