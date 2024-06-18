@@ -1,3 +1,8 @@
+/**
+*main - return 0
+*Description: 'display rand value and if she is postive, negative or neutral'
+*Return: 0
+*/
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
