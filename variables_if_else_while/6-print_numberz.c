@@ -12,6 +12,6 @@ while (i != 10)
 putchar('0' + i);
 i++;
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
