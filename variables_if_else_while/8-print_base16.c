@@ -8,7 +8,7 @@ int main(void)
 {
 int i = 0;
 char c = '0';
-while (i != 16)
+while (i != 17)
 {
 if (i == 10)
 {
