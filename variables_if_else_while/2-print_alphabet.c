@@ -10,11 +10,10 @@ int main(void)
 {
 char alphabet = 'a';
 char lr = '\n';
-char alphabet_with_space = alphabet + lr;
 int i = 0;
 while(i!=26)
 {
-	putchar(alphabet_with_space);
+	putchar(alphabet);
 	alphabet++;
 	i++;
 }
