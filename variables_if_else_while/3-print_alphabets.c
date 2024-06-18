@@ -14,7 +14,7 @@ char lr = '\n';
 int i = 0;
 while (i != 26)
 {
-putchar(alphabetlow)
+putchar(alphabetlow);
 alphabetlow++;
 i++;
 }
