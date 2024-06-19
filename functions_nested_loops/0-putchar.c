@@ -13,7 +13,6 @@ int _putchar(char c)
 
 int main(void)
 {
-	int i = 0;
 	char c = '_';
 
 	_putchar(c);
