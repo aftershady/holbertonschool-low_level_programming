@@ -3,30 +3,18 @@
 /**
 *main - return 0
 *_putchar - writes the character c to stdout
-*@c: The character to print
 *Return: On success 1.
-*On error, -1 is returned, and errno is set appropriately.
 */
 int main(void)
 {
-	char c = '_';
-
-	_putchar(c);
-	c = 'p';
-	_putchar(c);
-	c = 'u';
-	_putchar(c);
-	c = 't';
-	_putchar(c);
-	c = 'c';
-	_putchar(c);
-	c = 'h';
-	_putchar(c);
-	c = 'a';
-	_putchar(c);
-	c = 'r';
-	_putchar(c);
-	c = '\n';
-	_putchar(c);
+	_putchar(95);
+	_putchar(112);
+	_putchar(117);
+	_putchar(116);
+	_putchar(99);
+	_putchar(104);
+	_putchar(97);
+	_putchar(114);
+	_putchar('\n');
 	return (0);
 }
