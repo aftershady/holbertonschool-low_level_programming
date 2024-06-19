@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include "main.h"
 /**
 *main - return 0
 *_putchar - writes the character c to stdout
@@ -13,7 +14,6 @@ int _putchar(char c)
 
 int main(void)
 {
-	int i = 0;
 	char c = '_';
 
 	_putchar(c);
