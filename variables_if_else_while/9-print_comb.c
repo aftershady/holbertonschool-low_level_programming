@@ -13,7 +13,7 @@ while (i != 11)
 putchar(c);
 if (i == 9)
 {
-c = 36;
+putchar(36);
 }
 else if (i < 9)
 {
@@ -23,6 +23,5 @@ c++;
 }
 i++;
 }
-putchar('\n');
 return (0);
 }
