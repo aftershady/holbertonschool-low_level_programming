@@ -15,7 +15,7 @@ if (i == 9)
 {
 putchar('\n');
 }
-else	
+else
 {
 putchar(',');
 putchar(' ');
