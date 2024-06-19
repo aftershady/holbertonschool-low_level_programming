@@ -7,16 +7,21 @@
 int main(void)
 {
 int i = 0;
-while (i != 10)
+int c = 48;
+while (i != 11)
 {
-putchar('0' + i);
+putchar(c);
+if (i == 9)
+{
+c = 36;
+}
+else if (i < 9)
+{
 putchar(',');
 putchar(' ');
-i++;
-if(i=9)
-{
-',' = '$';
+c++;
 }
+i++;
 }
 putchar('\n');
 return (0);
