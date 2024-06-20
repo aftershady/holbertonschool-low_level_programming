@@ -2,19 +2,25 @@
 #include "main.h"
 /**
 *main - return 0
+*Description: 'display char from a to z'
 *_putchar - writes the character c to stdout
 *Return: On success 1.
 */
+void print_alphabet(void)
+{
+	int i = 0;
+	int c = 97;
+
+	while (1 != 27)
+	{
+		_putchar(c);
+		c++;
+		i++;
+	}	
+}
+
 int main(void)
 {
-        _putchar('a);
-        _putchar(112);
-        _putchar(117);
-        _putchar(116);
-        _putchar(99);
-        _putchar(104);
-        _putchar(97);
-        _putchar(114);
-        _putchar('\n');
-        return (0);
+void print_alphabet(void);
+return (0);
 }
