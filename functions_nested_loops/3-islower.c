@@ -6,7 +6,7 @@
 *Description: This function prints the alphabet in lowercase 10 times.
 *Return: void
 */
-int _islower(int c);
+int _islower(int c)
 {
 int i = 0;
 while (c != "z")
