@@ -7,8 +7,8 @@
 *Return: last number
 */
 int print_last_digit(int n)
-int e = 88;
 {
+int e = 88;
 if (n > 0)
 {
 return (e);
