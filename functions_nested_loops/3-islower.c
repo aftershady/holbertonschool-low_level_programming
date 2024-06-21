@@ -11,7 +11,7 @@ int _islower(int c)
 int i = 0;
 while (i <= 25)
 {
-	if(c == 'a'+i)
+	if(c == 'a' + i)
 	{
 	return 1;
 	}
