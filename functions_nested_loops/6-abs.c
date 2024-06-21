@@ -8,13 +8,13 @@
 */
 int _abs(int a)
 {
-	if (a == 0)
+if (a == 0)
 {	
 return('0');
 }	
-if (a < )
+if (a < 0)
 {
-return(a * (%d-1));
+return(a * -1);
 }
 else
 {
