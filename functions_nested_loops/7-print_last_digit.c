@@ -13,4 +13,5 @@ if (a < 0)
 {
 return (a * -1);
 }
+putchar('0' + a);
 }
