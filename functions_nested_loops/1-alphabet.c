@@ -16,8 +16,6 @@ while (i != 27)
 _putchar(c);
 c++;
 i++;
-if (i==27)
-{
-_putchar('\n');
 }
+_putchar('\n');
 }
