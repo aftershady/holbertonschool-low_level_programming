@@ -9,7 +9,6 @@
 */
 int print_sign(int n)
 {
-int i = 0;
 if (n/n == 0 && n > 0)
 {
 return (1);
