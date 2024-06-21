@@ -18,12 +18,10 @@ while (i <= 25)
 _putchar(c);
 c++;
 i++;
-if (i == 25)
-{
-_putchar('\n');
-c = 0;
-j++;
 }
+_putchar('\n');
+i = 0;
+j++;
 }
 }
 }
