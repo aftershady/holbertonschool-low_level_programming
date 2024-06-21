@@ -11,11 +11,14 @@ void print_alphabet(void)
 {
 int i = 0;
 int c = 97;
-while (i != 27)
+while (i != 26)
 {
 _putchar(c);
 c++;
 i++;
-}
+if (i == 26)
+{
 _putchar('\n');
+}
+}
 }
