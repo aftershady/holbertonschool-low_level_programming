@@ -11,7 +11,6 @@ i
 int _isalpha(int c)
 {
 int i = 0;
-int j = 0;
 while (i <= 25)
 {
         if (c == 'a' + i || c == 'A')
