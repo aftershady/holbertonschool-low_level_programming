@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include "main.h"
 /**
 *main - return 0
 *Description: 'display char from a to z'
@@ -16,12 +15,8 @@ while (i != 27)
 _putchar(c);
 c++;
 i++;
-}
+if (i==27)
+{
 _putchar('\n');
 }
-
-int main(void)
-{
-    print_alphabet();
-    return (0);
 }
