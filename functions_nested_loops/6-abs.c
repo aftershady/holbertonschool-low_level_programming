@@ -6,18 +6,18 @@
 *Description: return a char and a
 *Return: 1 or 0 or -1
 */
-int _abs(int)
+int _abs(int a)
 {
-if (int == 0)
-{
+	if (a == 0)
+{	
 return('0');
 }	
-if (int < )
+if (a < )
 {
-return(int * (int-1));
+return(a * (%d-1));
 }
 else
 {
-return (int);
+return (a);
 }
 }
