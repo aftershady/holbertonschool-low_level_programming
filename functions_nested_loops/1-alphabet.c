@@ -9,15 +9,14 @@
 */
 void print_alphabet(void)
 {
-	int i = 0;
-	int c = 97;
-
-	while (1 != 27)
-	{
-		_putchar(c);
-		c++;
-		i++;
-	}	
+int i = 0;
+int c = 97;
+while (i != 27)
+{
+_putchar(c);
+c++;
+i++;
+}
 }
 
 int main(void)
