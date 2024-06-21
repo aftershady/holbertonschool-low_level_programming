@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include "main.h"
 /**
 *main - return 0
 *Description: 'display char from a to z'
