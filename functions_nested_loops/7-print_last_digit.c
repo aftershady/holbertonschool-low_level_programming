@@ -8,7 +8,7 @@
 */
 int print_last_digit(int n)
 {
-char e = '8';
+char e = '88';
 if (n > 0)
 {
 return (e);
