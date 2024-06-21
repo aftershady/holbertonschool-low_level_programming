@@ -9,7 +9,7 @@
 int _islower(int c)
 {
 int i = 0;
-while (c != "z")
+while (c != 'z')
 {
 	if(c == 'a'+i)
 	{
