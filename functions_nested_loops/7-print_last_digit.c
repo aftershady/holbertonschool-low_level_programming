@@ -7,12 +7,11 @@
 *Return: last number
 */
 int print_last_digit(int n)
-int c = 88;
+int e = 88;
 {
 if (n > 0)
 {
-
-return (c);
+return (e);
 }
 else
 {
