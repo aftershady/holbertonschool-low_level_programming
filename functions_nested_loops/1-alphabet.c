@@ -1,11 +1,11 @@
 #include <unistd.h>
 #include "main.h"
+
 /**
-*main - return 0
-*Description: 'display char from a to z'
-*
-*_putchar - writes the character c to stdout
-*Return: On success 1.
+*print_alphabet - Print the alphabet
+*Description: This function prints the alphabet in lowercase.
+*using the putchar function.
+*Return: void
 */
 void print_alphabet(void)
 {
