@@ -16,5 +16,5 @@ _putchar(c);
 c++;
 i++;
 }
-putchar('\n');
+_putchar('\n');
 }
