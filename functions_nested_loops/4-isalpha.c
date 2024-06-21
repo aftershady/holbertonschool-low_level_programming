@@ -13,7 +13,7 @@ int _isalpha(int c)
 int i = 0;
 while (i <= 25)
 {
-        if (c == 'a' + i || c == 'A')
+        if (c == 'a' + i || c == 'A' + i)
         {
         return (1);
         }
