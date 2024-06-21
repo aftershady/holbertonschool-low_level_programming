@@ -2,20 +2,21 @@
 #include "main.h"
 
 /**
-*print_alphabet_x10 - Print the alphabet x10
-*Description: This function prints the alphabet in lowercase 10 times.
-*Return: void
+*_islower - capital checker
+*@c: letter
+*Description: check if your letter is a capital or not
+*Return: 0 if capital 1 if not
 */
 int _islower(int c)
 {
 int i = 0;
 while (i <= 25)
 {
-	if(c == 'a' + i)
+	if (c == 'a' + i)
 	{
-	return 1;
+	return (1);
 	}
 	i++;
 }
-return 0;
-}   
+return (0);
+}
