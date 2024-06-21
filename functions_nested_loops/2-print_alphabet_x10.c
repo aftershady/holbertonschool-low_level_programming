@@ -11,14 +11,14 @@ void print_alphabet_x10(void)
 int i = 0;
 int j = 0;
 int c = 97;
-while (j < 8)
+while (j < 10)
 {
-while (i != 26)
+while (i <= 25)
 {
 _putchar(c);
 c++;
 i++;
-if (i == 26)
+if (i == 25)
 {
 _putchar('\n');
 c = 0;
