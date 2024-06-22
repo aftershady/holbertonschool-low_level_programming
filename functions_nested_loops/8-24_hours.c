@@ -20,22 +20,26 @@ void jack_bauer(void)
 			_putchar(':');
 			_putchar(_10_minutes);
 			_putchar(minutes);
+			_putchar('\n');
 			minutes++;
 		}
-		if (minutes > '9')
+		if (minutes > '9' && _10_minutes < '7')
 		{
 			_10_minutes++;
 			minutes = '0';
 		}
-		else if (_10_minutes > '6')
+		else if (_10_minutes > '6' && hour < '10')
 		{
 			hour++;
 			_10_minutes = '0';
+			minutes = '0';
 		}
 		else if (hour > '9')
 		{
 			_10_hour++;
 			hour = '0';
+			_10_minutes = '0';
+			minutes = '0';
 		}
 	}
 }
