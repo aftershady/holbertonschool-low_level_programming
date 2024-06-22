@@ -12,8 +12,11 @@ int ln;
 if (ln < 0)
 {
 ln = (n * -1) % 10;
-
 return (ln);
 }
-_putchar(('0' + (n % 10));
+else
+{
+ln = '0' + (n % 10);
+_putchar(ln);
+}
 }
