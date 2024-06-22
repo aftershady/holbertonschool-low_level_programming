@@ -15,7 +15,7 @@ if (n < 0)
 ln = ln * -1;
 
 }
-_putchar(ln);
+_putchar('0' + ln);
 return(ln);
 
 }
