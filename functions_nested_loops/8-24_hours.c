@@ -11,15 +11,15 @@ void jack_bauer(void)
 	int hour = 0;
 	int _10_minutes = 0;
 	int minutes = 0;
-	while(10_hour != 2 && hour != 4)
+	while(_10_hour != 2 && hour != 4)
 	{
 		while(minutes <= 9)
 		{
-			putchar(_10_hour);
-			putchar(hour);
-			putchar(':');
-			putchar(_10_minutes);
-			putchar(minutes);
+			_putchar(_10_hour);
+			_putchar(hour);
+			_putchar(':');
+			_putchar(_10_minutes);
+			_putchar(minutes);
 			minutes++;
 		}
 		if (minutes > 9)
