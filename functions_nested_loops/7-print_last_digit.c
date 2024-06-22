@@ -12,13 +12,10 @@ int ln = n % 10;
 
 if (n < 0)
 {
-_putchar('0' + ln);
-return (ln);
+ln = ln * -1;
+
 }
-else
-{
-ln = '0' + ln;
 _putchar(ln);
 return(ln);
-}
+
 }
