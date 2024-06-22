@@ -11,7 +11,7 @@ void jack_bauer(void)
 	char hour = '0';
 	char _10_minutes = '0';
 	char minutes = '0';
-	while(_10_hour != '2' && hour != '4')
+	while(_10_hour != '3')
 	{
 		while(minutes <= '9')
 		{
@@ -40,6 +40,10 @@ void jack_bauer(void)
 			hour = '0';
 			_10_minutes = '0';
 			minutes = '0';
+		}
+		else if (_10_hour == '2' && hour == '3' && _10_minutes == '5' && minutes == ':')
+		{
+			_10_hour++;
 		}
 	}
 }
