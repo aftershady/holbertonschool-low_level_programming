@@ -18,6 +18,6 @@ else
 {
 ln = '0' + (n % 10);
 _putchar(ln);
-return(n);
+return(n % 10);
 }
 }
