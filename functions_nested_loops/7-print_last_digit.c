@@ -15,5 +15,5 @@ ln = (n * -1) % 10;
 
 return (ln);
 }
-_putchar('0' + (n % 10);
+_putchar(('0' + (n % 10));
 }
