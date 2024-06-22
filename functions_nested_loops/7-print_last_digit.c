@@ -12,6 +12,7 @@ int ln = 0;
 if (n < 0)
 {
 ln = (n * -1) % 10;
+_putchar(ln);
 return (ln);
 }
 else
