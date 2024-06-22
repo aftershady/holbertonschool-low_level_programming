@@ -28,7 +28,7 @@ void jack_bauer(void)
 			_10_minutes++;
 			minutes = '0';
 		}
-		else if (_10_minutes > '6' && hour < '10')
+		else if (_10_minutes > '6' && hour < ':')
 		{
 			hour++;
 			_10_minutes = '0';
