@@ -23,12 +23,12 @@ void jack_bauer(void)
 			_putchar('\n');
 			minutes++;
 		}
-		if (minutes > '9' && _10_minutes == '5')
+		if (minutes > '9' && _10_minutes < '5')
 		{
 			_10_minutes++;
 			minutes = '0';
 		}
-		else if (_10_minutes > '5' && hour < ':')
+		else if (_10_minutes == '5' && hour < ':')
 		{
 			hour++;
 			_10_minutes = '0';
