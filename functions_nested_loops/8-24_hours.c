@@ -7,43 +7,49 @@
 */
 void jack_bauer(void)
 {
-	char _10_hour = '0';
-	char hour = '0';
-	char _10_minutes = '0';
-	char minutes = '0';
-	while(_10_hour != '3')
+	int h10 = 0;
+	int h = 0;
+	int m10 = 0;
+	int m = 0;
+	int i = 0;
+	int j = 0;
+	while (j < 24)
 	{
-		while(minutes <= '9')
+		for (; i < 60; i++)
 		{
-			_putchar(_10_hour);
-			_putchar(hour);
+			_putchar(h10 + '0');
+			_putchar(h + '0');
 			_putchar(':');
-			_putchar(_10_minutes);
-			_putchar(minutes);
+			_putchar(m10 + '0');
+			_putchar(m + '0');
 			_putchar('\n');
-			minutes++;
+
+			if (m == 9)
+			{
+				m = 0;
+				m10++;
+			}
+			else
+			{
+				m++;
+			}
 		}
-		if (minutes > '9' && _10_minutes < '5')
+
+		if (h == 9)
 		{
-			_10_minutes++;
-			minutes = '0';
-		}
-		else if (_10_minutes == '5' && hour < ':')
+			m10 = 0;
+			m = 0;
+			h = 0;
+ 			h10++;
+ 		}
+		else
 		{
-			hour++;
-			_10_minutes = '0';
-			minutes = '0';
+			m10 = 0;
+			m = 0;
+			h++;
 		}
-		else if (hour > '9')
-		{
-			_10_hour++;
-			hour = '0';
-			_10_minutes = '0';
-			minutes = '0';
-		}
-		else if (_10_hour == '2' && hour == '3' && _10_minutes == '5' && minutes == ':')
-		{
-			_10_hour++;
-		}
+		i = 0;
+		j++;
+
 	}
 }
