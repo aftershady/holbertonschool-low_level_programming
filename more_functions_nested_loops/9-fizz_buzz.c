@@ -28,5 +28,6 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
+	printf("\n\n");
 	return (0);
 }
