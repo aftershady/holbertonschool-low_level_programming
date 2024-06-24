@@ -18,8 +18,9 @@ void more_numbers(void)
 			if (j == 10)
 			{
 				l++;
+				j = 0;
 			}
-			if (l > 0)
+			else if (l > 0)
 			{
 				_putchar(l + '0');
 			}
