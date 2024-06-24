@@ -19,6 +19,6 @@ void print_line(int n)
 	}
 	else
 	{
-		return (1);
+		return (0);
 	}
 }
