@@ -9,23 +9,11 @@
  */
 int _isupper(int c)
 {
-int i = 0;
-while (i<=26)
+if (c >= 97 &&  c <= 122)
 {
-if (c == 'a' + i)
-{
-	c = 0;
-	return (c);
-}
-else if (c == 'A' + i)
-{
-	c = 1;
-	return (c);
+	return (0);
 }
 else
 {
-i++;
-return 2;
-}
-}
+	return (1);
 }
