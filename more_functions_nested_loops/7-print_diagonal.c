@@ -8,7 +8,6 @@
  */
 void print_diagonal(int n)
 {
-	int col;
 	int row = 0;
 	if (n > 0)
 	{
