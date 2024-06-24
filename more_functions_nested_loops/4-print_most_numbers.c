@@ -1,11 +1,11 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * print_numbers - putchar numbers
- * Description: printf numbers from 0 to 9
+ * print_most_numbers - putchar numbers with exept
+ * Description: printf numbers from 0 to 9 exept 2 and 4
  * Return: void
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	char i = '0';
 
