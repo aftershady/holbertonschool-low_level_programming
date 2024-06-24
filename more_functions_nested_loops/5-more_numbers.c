@@ -23,7 +23,7 @@ void more_numbers(void)
 				unite = '0';
 			}
 		_putchar(unite);
-		unité ++;
+		unite++;
 		}
 		_putchar('\n');
 	}	
