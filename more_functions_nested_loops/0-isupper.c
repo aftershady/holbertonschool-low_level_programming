@@ -22,6 +22,10 @@ else if (c == 'A' + i)
 	c = 1;
 	return (c);
 }
+else
+{
 i++;
+return 2;
+}
 }
 }
