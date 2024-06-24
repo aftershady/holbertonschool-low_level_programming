@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * print_square - square of #
+ * @size : size of square
  * Description: square of # with x rows and cols
  * Return: void
  */
@@ -20,7 +21,7 @@ void print_square(int size)
 			_putchar('\n');
 		}
 	}
-	else 
+	else
 	{
 		_putchar('\n');
 	}
