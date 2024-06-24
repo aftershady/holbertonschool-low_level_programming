@@ -1,9 +1,9 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * print_line -
- * @n:  
- * Description: 
+ * print_line - print _ x times
+ * @n:	number
+ * Description: print a underscore x times
  * Return: n
  */
 void print_line(int n)
@@ -11,6 +11,7 @@ void print_line(int n)
 	int i = 0;
 	while(i <= n)
 	{
-		_putchar('-');
+		_putchar('_');
 	}
+	return (0);
 }
