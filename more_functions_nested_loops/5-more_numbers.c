@@ -20,7 +20,8 @@ void more_numbers(void)
 				l++;
 				j = 0;
 			}
-			else if (l > 0)
+
+			 if (l > 0)
 			{
 				_putchar(l + '0');
 			}
