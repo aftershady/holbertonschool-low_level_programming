@@ -5,7 +5,7 @@
  * Description: square of # with x rows and cols
  * Return: void
  */
-void print_diagonal(int n)
+void print_square(int size)
 {
 	int i, j;
 
