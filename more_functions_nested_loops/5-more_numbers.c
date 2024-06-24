@@ -9,8 +9,6 @@ void more_numbers(void)
 {
         int i = 0;
 	int j = 0;
-	char dixaine = '1';
-	char unite = '0';
 
 	for (i = 0; i < 10; i++)
 	{
@@ -19,11 +17,9 @@ void more_numbers(void)
 			if (j < 9)
 			{
 
-				_putchar(dixaine); 
-				unite = '0';
+				_putchar(j\10); 
 			}
-		_putchar(unite);
-		unite++;
+		_putchar(j%10);
 		j++;
 		}
 		_putchar('\n');
