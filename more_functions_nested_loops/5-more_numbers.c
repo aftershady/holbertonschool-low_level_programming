@@ -19,7 +19,7 @@ void more_numbers(void)
 			if (j < 9)
 			{
 
-				_putchar(dixaine) 
+				_putchar(dixaine); 
 				unite = '0';
 			}
 		_putchar(unite);
