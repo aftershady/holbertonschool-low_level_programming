@@ -1,6 +1,6 @@
 /**
  * main - display 1 to 100
- * Description: display 1 to 10 with x5 = buzz & x3 = fizz
+ * Description: display 1 to 10 with x5 = buzz & x3 = fizz & both = FizzBuzz
  * Return: 0
 */
 #include <stdio.h>
