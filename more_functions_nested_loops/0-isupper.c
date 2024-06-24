@@ -9,15 +9,18 @@
  */
 int _isupper(int c)
 {
+int i = 0;
 while (i<=26)
 {
 if (c == 'a' + i)
 {
-	return (0);
+	c = 0;
+	return (c);
 }
 else if (c == 'A' + i)
 {
-	return (1);
+	c = 1;
+	return (c);
 }
 i++;
 }
