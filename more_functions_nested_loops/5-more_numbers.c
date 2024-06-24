@@ -17,7 +17,7 @@ void more_numbers(void)
 			if (j < 9)
 			{
 
-				_putchar((dixiaine); 
+				_putchar(dixiaine); 
 				unité = 0;
 			}
 		_putchar(unité);
