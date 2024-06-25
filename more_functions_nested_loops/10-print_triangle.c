@@ -4,8 +4,7 @@
  * print_triangle - triangle rectancle of #
  * @size : size of triangle
  * Description: square of # with x rows and cols
- * Return: void 
- *
+ * Return: void
  */
 void print_triangle(int size)
 {
