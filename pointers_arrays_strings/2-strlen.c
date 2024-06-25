@@ -6,7 +6,7 @@
 */
 int _strlen(char *s)
 {
-	size_t counter;
+	unsigned int counter;
 	while (s[counter] != '\0')
 	{
 	counter ++;
