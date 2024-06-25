@@ -4,7 +4,8 @@
  * print_triangle - triangle rectancle of #
  * @size : size of triangle
  * Description: square of # with x rows and cols
- * Return: void
+ * Return: void 
+ *
  */
 void print_triangle(int size)
 {
@@ -14,7 +15,7 @@ void print_triangle(int size)
 	{
 		for (i = size; i > 0; i--)
 		{
-			for (j = size - 1; j > 0; j--)
+			for (j = size	1; j > 0; j--)
 			{
 				_putchar(' ');
 			}
