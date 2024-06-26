@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _puts - display a string
  * Description: take a string on in and display it with new line at the end
