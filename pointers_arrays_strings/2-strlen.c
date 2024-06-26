@@ -1,15 +1,16 @@
 /**
- * swap_int - swap numbers
- * Description: 
+ * _strlen - size of string
+ * Description: calculate the size of a string
  * @s: string
- * Return: void
+ * Return: size in integer format
 */
 int _strlen(char *s)
 {
 	int counter = 0;
+
 	while (s[counter] != '\0')
 	{
-	counter ++;
+	counter++;
 	}
 	return (counter);
 }
