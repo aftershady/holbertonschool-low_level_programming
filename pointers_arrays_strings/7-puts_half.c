@@ -7,9 +7,23 @@
 */
 void puts_half(char *str)
 {
-int i;	
-while (str[i] != '\0')
-{
-	i++;
-}
+	int i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	i--;
+	if(i%2 == 1) 
+	{
+		i = (i + 1)/2;
+	}
+	else
+	{
+		i = i/2;
+	}
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
 }
