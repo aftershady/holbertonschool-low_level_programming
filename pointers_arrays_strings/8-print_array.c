@@ -8,7 +8,7 @@
 */
 void print_array(int *a, int n)
 {
-	int i = n;
+	int i = 0;
 	if (n > 0)
 	{
 		while (a[i] != a[n])
