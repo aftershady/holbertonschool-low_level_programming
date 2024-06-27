@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * rev_string - reverse string
- * Description: reverse a string with temp file
- * @s: string
+ * puts2 - print 1 char out of 2
+ * Description: print the hal of a sting strating by the first char
+ * @str: string
  * Return: 0
 */
 void puts2(char *str)
@@ -18,5 +18,5 @@ void puts2(char *str)
 			i++;
 		}
 	}
-	_putchar('\n');	
+	_putchar('\n');
 }
