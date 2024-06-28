@@ -1,7 +1,8 @@
 /**
-*_strcat - concatenate 2 string
+*_strncat - concatenate 2 string wit n bytes
 *@dest: first string
 *@src: second string
+*n: number of the lenght of the second string
 *Description: copy the second string at the end of the first one
 *Return: dest
 */
