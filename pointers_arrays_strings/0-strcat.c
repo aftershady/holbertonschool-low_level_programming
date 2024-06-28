@@ -1,9 +1,14 @@
 /**
-*
+*_strcat - concatenate 2 string
+*@dest: first string
+*@src: second string
+*Description: copy the second string at the end of the first one
+*Return: dest
 */
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, j; 
+	int i = 0, j;
+
 	while (dest[i] != '\0')
 	{
 		i++;
@@ -14,7 +19,7 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return dest;
+	return (dest);
 
 }
 
