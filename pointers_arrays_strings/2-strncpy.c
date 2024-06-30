@@ -31,6 +31,10 @@ while (i != dest_size)
 	}
 	else
 	{
+		if (src_size < n)
+		{
+		dest[i] = 'null';
+		}	
 		dest[i] = src[i];
 	}
 	i++;
