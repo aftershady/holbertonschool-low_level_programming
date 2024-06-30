@@ -29,10 +29,6 @@ while (i != dest_size)
 	{
 		dest[i] = '-';
 	}
-	else if (src_size == 0)
-	{
-		dest[i] = null;
-	}
 	else
 	{
 		dest[i] = src[i];
