@@ -17,7 +17,7 @@ char *cap_string(char *str)
 		{
 			if (str[i] == 'a' + j)
 			{
-				if (str[j-1] == '.' ||  str[j-1] == ';' ||  str[j-1] == ' ' || str[j-1] == '!')
+				if (str[i-1] == '.' ||  str[i-1] == ';' ||  str[i-1] == ' ' || str[i-1] == '!' || j == 0)
 				{
         				str[i] = 'A' + j;
 				}
