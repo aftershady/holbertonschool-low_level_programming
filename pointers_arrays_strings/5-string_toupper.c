@@ -1,8 +1,8 @@
 /**
- * string_toupper
- * @str:
- * Description:
- * Return:
+ * string_toupper - upsize lower char
+ * @str: string
+ * Description: if there is lower char into string replace them to caps
+ * Return: str
  */
 char *string_toupper(char *str)
 {
@@ -20,7 +20,7 @@ for (i = 0; i < size; i++)
 			str[i] = 'A' + j;
 		}
 	}
-j = 0;	
+j = 0;
 }
 return (str);
 }
