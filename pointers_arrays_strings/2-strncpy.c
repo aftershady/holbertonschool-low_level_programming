@@ -15,8 +15,12 @@ while (src[size] != '\0')
 {
 size++;
 }
-while (i != size && i < n)
+while (i != size)
 {
+if(i >= n)
+{
+src[i] = '*';
+}
 dest[i] = src[i]; 
 i++;
 }
