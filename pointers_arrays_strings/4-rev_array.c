@@ -15,5 +15,4 @@ t = a[j];
 a[j] = a[i]; 
 a[i] = t;
 }
-return (a);
 }
