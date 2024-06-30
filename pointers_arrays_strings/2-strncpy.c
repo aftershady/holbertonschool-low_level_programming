@@ -15,7 +15,7 @@ while (src[size] != '\0')
 {
 size++;
 }
-while (i != size || i > n)
+while (i != size && i < n)
 {
 dest[i] = src[i]; 
 i++;
