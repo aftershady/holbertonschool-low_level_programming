@@ -31,7 +31,7 @@ while (i != dest_size)
 	}
 	else if (src_size == 0)
 	{
-		dest[i] = NULL;
+		dest[i] = null;
 	}
 	else
 	{
