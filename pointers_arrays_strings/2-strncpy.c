@@ -19,9 +19,12 @@ while (i != size)
 {
 if(i >= n)
 {
-src[i] = '*';
+dest[i] = '*';
 }
-dest[i] = src[i]; 
+else
+{
+dest[i] = src[i];
+}
 i++;
 }
 dest[i] = '\0'; 
