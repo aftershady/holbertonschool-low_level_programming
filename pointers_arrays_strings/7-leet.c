@@ -10,23 +10,23 @@ char *leet(char *str)
 	
 	for(i = 0; str[i] != '\0'; i++)
 	{
-		for(j = 0; str[i] == 'a' || str[i] == 'A')
+		for(j = 0; str[i] == 'a' || str[i] == 'A'; j++)
 		{
 			str[i] = 4;
 		}
-		for(j = 0; str[i] == 'e' || str[i] == 'E')
+		for(j = 0; str[i] == 'e' || str[i] == 'E'; j++)
 		{
 			str[i] = 3;
 		}
-		for(j = 0; str[i] == 'o' || str[i] == 'O')
+		for(j = 0; str[i] == 'o' || str[i] == 'O'; j++)
 		{
 			str[i] = 0;
 		}
-		for(j = 0; str[i] == 't' || str[i] == 'T')
+		for(j = 0; str[i] == 't' || str[i] == 'T'; j++)
 		{
 			str[i] = 7;
 		}
-		for(j = 0; str[i] == 'l' || str[i] == 'L')
+		for(j = 0; str[i] == 'l' || str[i] == 'L'; j++)
 		{
 			str[i] = 1;
 		}
