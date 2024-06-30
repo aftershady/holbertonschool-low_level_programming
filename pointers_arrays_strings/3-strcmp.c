@@ -11,7 +11,7 @@ int i, j, counter_s1, counter_s2, comp;
 
 for(i = 0, counter_s1 = 0; s1[i] != '\0'; i++)
 {
-counter_s1 += si[i];
+counter_s1 += s1[i];
 }
 for(j = 0, counter_s2 = 0; s2[j] != '\0'; j++)
 {
