@@ -23,7 +23,7 @@ while (dest[dest_size] != '\0')
 	dest_size++;
 }
 /*strcpy*/
-while (i != dest_size - 1)
+while (i != dest_size)
 {
 	if(i >= n)
 	{
