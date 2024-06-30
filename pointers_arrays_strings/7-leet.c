@@ -17,7 +17,7 @@ char *leet(char *str)
 		{
 			if (str[i] == tab1[j] || str[i] == tab2[j])
 			{
-				str[i] == tab[j];
+				str[i] = tab[j];
 			}
 		}
 	}
