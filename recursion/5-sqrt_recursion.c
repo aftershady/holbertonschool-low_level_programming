@@ -7,10 +7,10 @@
  */
 static int calculate(int n, int x)
 {
-	if (x * x > n)
-		return (n);
 	if (x * x == n)
 		return (x);
+	if (x * x > n)
+		return (-1);
 	return (calculate(n, x + 1));
 }
 /**
