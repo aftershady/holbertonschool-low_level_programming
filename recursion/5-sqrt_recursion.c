@@ -5,7 +5,7 @@
  * Description: determine the natural square root of n
  * Return: n, (x * x) incrementred
  */
-static int calculate(int n, int x)
+int calculate(int n, int x)
 {
 	if (x * x == n)
 		return (x);
@@ -13,6 +13,7 @@ static int calculate(int n, int x)
 		return (-1);
 	return (calculate(n, x + 1));
 }
+
 /**
  * _sqrt_recursion - search the natural square root of n
  * @n: number
@@ -24,5 +25,3 @@ int _sqrt_recursion(int n)
 {
 	return (calculate(n, 1));
 }
-
-
