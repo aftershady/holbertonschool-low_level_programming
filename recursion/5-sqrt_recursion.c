@@ -9,6 +9,8 @@ static int calculate(int n, int x);
 
 int _sqrt_recursion(int n)
 {
+	if (n == 0)
+		return 0;
 	if (n < 0)
 		return (-1);
 	return (calculate(n, 1));
@@ -17,7 +19,7 @@ int _sqrt_recursion(int n)
 static int calculate(int n, int x)
 {
 	if (x * x > n)
-		return (-1);
+		return (n);
 	if (x * x == n)
 		return (x);
 	return calculate(n, x + 1);
