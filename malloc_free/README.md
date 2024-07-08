@@ -14,3 +14,6 @@ copy string in another memory place
 
 2-str_concat.c
 concatenate 2 string in another
+
+3-alloc_grid.c
+create a 2d array initialized to 0
