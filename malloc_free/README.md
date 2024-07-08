@@ -8,3 +8,6 @@ this directory contain function who use malloc
 
 0-create_array.c
 create an array define in the main
+
+1-strdup.c
+copy string in another memory place
