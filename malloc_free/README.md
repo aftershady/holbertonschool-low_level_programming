@@ -11,3 +11,6 @@ create an array define in the main
 
 1-strdup.c
 copy string in another memory place
+
+2-str_concat.c
+concatenate 2 string in another
