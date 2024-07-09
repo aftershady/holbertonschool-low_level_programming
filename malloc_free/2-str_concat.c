@@ -10,22 +10,46 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i, j;
-	char *array;
+	char *array = malloc(sizeof(char));
 
-	array = malloc(sizeof(char) * ((sizeof(s1) - 1) + sizeof(s2)));
-
-	for (i = 0; s1[i] != '\0'; i++)
+	if (s1 == NULL && s2 != NULL)
 	{
-		array[i] = s1[i];
+		array = malloc(sizeof(s2));
+		for (i = 0; s2[1] != '\0'; i++)
+		{
+			array[i] = s2[i];
+		}
+		array[i] = '\0';
 	}
-	for (j = 0; s2[j] != '\0'; i++, j++)
+	else if (s2 == NULL && s1 != NULL)
 	{
-		array[i] = s2[j];
+		array = malloc(sizeof(s1));
+		for (i = 0; s1[1] != '\0'; i++)
+		{
+			array[i] = s1[i];
+		}
+		array[i] = '\0';
 	}
-	array[i] = '\0';
+	else if (s2 == NULL && s1 == NULL)
+	{
+		return array;
+	}
+	else
+	{
+		array = malloc(sizeof(char) * ((sizeof(s1) - 1) + sizeof(s2)));
 
-	if (array == NULL)
-		return (NULL);
+		for (i = 0; s1[i] != '\0'; i++)
+		{
+			array[i] = s1[i];
+		}
+		for (j = 0; s2[j] != '\0'; i++, j++)
+		{
+			array[i] = s2[j];
+		}
+		array[i] = '\0';
 
+		if (array == NULL)
+			return (NULL);
+	}
 	return (array);
 }
