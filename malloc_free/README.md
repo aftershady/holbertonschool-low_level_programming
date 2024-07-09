@@ -17,3 +17,6 @@ concatenate 2 string in another
 
 3-alloc_grid.c
 create a 2d array initialized to 0
+
+4-free_grid.c
+free memory for a 2d array
