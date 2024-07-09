@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -43,5 +42,4 @@ int **alloc_grid(int width, int height)
 		j = 0;
 	}
 	return (array2d);
-
 }
