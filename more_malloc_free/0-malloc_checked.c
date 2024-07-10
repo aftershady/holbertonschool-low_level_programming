@@ -3,8 +3,8 @@
 /**
  * malloc_checked - alloc memory to a pointer
  * @b: number of bytes
- * Description: take the value b, initialize a pointer with it
- * Return: adress pointed by a
+ * Description: take the value b initialize a pointer with it
+ * Return: adress pointed byy a
  */
 void *malloc_checked(unsigned int b)
 {
@@ -15,5 +15,5 @@ void *malloc_checked(unsigned int b)
 	{
 		exit(98);
 	}
-		return (a);
+	return (a);
 }
