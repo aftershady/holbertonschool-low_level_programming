@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * str_concat - concatenate 2 string in another
@@ -17,12 +18,12 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 	}
 
-	if (s2 == NULL)
+	if (s2 == NULL )
 	{
 		s2 = "";
 	}
 
-	array = malloc(sizeof(char) * (sizeof(s1) -1) + sizeof(s2));
+	array = malloc(sizeof(char) * (sizeof(s1) - 1) + sizeof(s2));
 
 		for (i = 0; s1[i] != '\0'; i++)
 		{
@@ -36,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 
 		if (array == NULL)
 		{
-			return (array = "");
+			return (NULL);
 		}
 
 		return (array);
