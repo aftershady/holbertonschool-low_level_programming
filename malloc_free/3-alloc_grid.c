@@ -5,7 +5,7 @@
  * @width: widht of the array
  * @height: height of the array
  * Description: initialise the height first then the width
- * Return: if error, free space alloced and null, if ok array2d
+ * Return: if error free space alloced and null, if ok array2d
  */
 int **alloc_grid(int width, int height)
 {
