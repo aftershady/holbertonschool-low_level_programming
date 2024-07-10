@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * str_concat - concatenate 2 string in another
  * @s1: string 1
@@ -23,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	array = malloc(sizeof(char) * (sizeof(s1) - 1) + sizeof(s2));
+	array = malloc(sizeof(char) * strlen(s1) + (strlen(s2) + 1));
 
 		for (i = 0; s1[i] != '\0'; i++)
 		{
