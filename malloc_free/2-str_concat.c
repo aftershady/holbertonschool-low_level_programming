@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 /**
@@ -38,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 
 		if (array == NULL)
 		{
-			return (NULL);
+			return (array = "");
 		}
 
 		return (array);
