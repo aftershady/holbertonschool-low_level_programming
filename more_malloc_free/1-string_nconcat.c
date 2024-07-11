@@ -6,7 +6,7 @@
  * @s1: string 1
  * @s2: string 2
  * @n: size of string 2
- * Description: take 2 string and copy char by char
+ * Description: take 2 string and copy
  * Return: null or new_string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -14,7 +14,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int i;
 	unsigned int j;
 	char *array;
-
 
 	if (s1 == NULL)
 	{
@@ -25,6 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
+	array = malloc(sizeof(char) * strlen(s1) + n + 1);
 
 		if (array == NULL)
 		{
@@ -34,9 +34,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			n = strlen(s2) + 1;
 		}
-
-		array = malloc(sizeof(char) * strlen(s1) + n + 1);
-
 		for (i = 0; s1[i] != '\0'; i++)
 		{
 			array[i] = s1[i];
@@ -51,6 +48,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			return (NULL);
 		}
-
 		return (array);
 }
