@@ -1,6 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
-#include <stlib.h>
 
 /**
  * string_nconcat - concatenate 2 string in another, the 2nd have n size
