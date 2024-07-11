@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 
 /**
@@ -19,12 +18,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *array;
 
 	if (s1 != NULL)
-	{size_1 = (strlen(s1)); }
+	{
+		while (s1[size_1])
+		{size_1 ++; }
+		size_1++;
+	}
 	else
 	{size_1 = 0; }
 
-	if (s2 != NULL)
-	{size_2 = (strlen(s2) + 1); }
+		if (s2 != NULL)
+	{
+		while (s2[size_2])
+		{size_2 ++; }
+		size_2++;
+	}
 	else
 	{size_2 = 0; }
 
