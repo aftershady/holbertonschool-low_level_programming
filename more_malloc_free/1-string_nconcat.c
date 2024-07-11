@@ -27,6 +27,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	array = malloc(sizeof(char) * (sizeof(s1) - 1) + sizeof(s2));
 
+		if (array == NULL)
+		{
+			free(array);
+			return (NULL);
+		}
 		if (n > sizeof(s2))
 		{
 			n = sizeof(s2) + 2;
@@ -45,7 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			return (NULL);
 		}
-		free(array);
 
 		return (array);
+		free(array);
 }
