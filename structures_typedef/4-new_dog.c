@@ -18,49 +18,34 @@ dog_t *new_dog;
 new_dog = malloc(sizeof(dog_t));
 if (new_dog == NULL)
 {
-	return (NULL);
+return (NULL);
 }
 /*init name*/
 while (name[nsize])
-{
-    nsize++;
-}
+{nsize++; }
 new_dog->name = malloc(sizeof(char) * nsize + 1);
 if (new_dog->name == NULL)
-{
-	free(new_dog->name);
-	free(new_dog);
-}
+{free(new_dog);
+return (NULL); }
 else
 {
-	for (i = 0; name[i]; i++)
-	{
-		new_dog->name[i] = name[i];
-	}
-	new_dog->name[i] = '\0';
-}
-
-/*init age*/
+for (i = 0; name[i]; i++)
+{new_dog->name[i] = name[i]; }
+new_dog->name[i] = '\0'; }
 new_dog->age = age;
-/*init owner */
 while (owner[osize])
-{
-    osize++;
-}
+{osize++; }
 new_dog->owner = malloc(sizeof(char) * osize + 1);
 if (new_dog->owner == NULL)
-{
-	free(new_dog->owner);
-	free(new_dog);
-}
+{free(new_dog->owner);
+free(new_dog);
+return (NULL); }
 else
 {
 for (i = 0; owner[i]; i++)
-	{
-		new_dog->owner[i] = owner[i];
-	}
-new_dog->owner[i] = '\0';
-}
-
+{new_dog->owner[i] = owner[i]; }
+new_dog->owner[i] = '\0'; }
 return (new_dog);
-}
+free(new_dog->name);
+	free(new_dog->owner);
+	free(new_dog); }
