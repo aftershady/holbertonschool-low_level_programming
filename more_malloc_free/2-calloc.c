@@ -21,9 +21,9 @@ if (array == NULL)
 {
 	return (NULL);
 }
-for (i = 0; i <= size; i++)
+for (i = 0; i <= (size * nmemb); i++)
 {
-	array[i] = '0';
+	array[i] = 0;
 }
 return (array);
 }
