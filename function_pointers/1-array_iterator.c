@@ -3,8 +3,8 @@
  * array_iterator - create a loop on function pointer on array
  * @array: array of int
  * @size: size of array
- * Description:
- * Return:
+ * Description: do a loop with a function pointer to display an array
+ * Return: nothing
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
