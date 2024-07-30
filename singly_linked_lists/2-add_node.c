@@ -51,7 +51,6 @@ list_t *new;
 new = malloc(sizeof(list_t));
 if (!new)
 {
-	free(new);
 	return (NULL);
 }
 /*copy data in new struct*/
