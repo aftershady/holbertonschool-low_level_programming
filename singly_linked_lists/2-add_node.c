@@ -2,18 +2,21 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * strdup - copy a string in a newly allocated string
- * @str: the string to copy
- * Return: the new string allocad with malloc
+ * strcpy - copy string in another
+ * @dest: string dest
+ * @src: string to cpy
+ * Return: string dest
  */
-char* strdup(const char* str)
+char *strcpy(char *dest, const char *src)
 {
-    char* duplicate = malloc(strlen(str) + 1);
-    if (duplicate == NULL)
-		return NULL;
+	char *d;
 
-    strcpy(duplicate, str);
-    return duplicate;
+	d = dest;
+	while ((*d++ = *src++))
+	{
+		;
+	}
+	return (dest);
 }
 
 /**
@@ -42,7 +45,7 @@ size_t strlen(const char *str)
  */
 list_t *add_node(list_t **head, const char *str)
 {
-/*add a new struct*/
+/*add a ne struct*/
 list_t *new;
 
 new = malloc(sizeof(list_t));
@@ -53,7 +56,15 @@ if (!new)
 }
 /*copy data in new struct*/
 new->len = strlen(str);
-new->str = strdup(str);
+/*aloc memory for the string*/
+new->str = malloc(new->len * (sizeof(char) + 1));
+if (!new->str)
+{
+	free(new);
+	return (NULL);
+}
+/*copy string in the struct string*/
+strcpy(new->str, str);
 /*copy adress of next node in the next pointer*/
 new->next = *head;
 
