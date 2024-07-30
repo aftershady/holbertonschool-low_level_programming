@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * free_list - free the singly linked list and th str in it
+ * free_dlistint - free the doubly linked list
  * @head: pointer to the first structure of the list
  * Description: copy the adresse of the first structure in temp pointer
- * and defile the l
+ * Return: nothing
  */
 void free_dlistint(dlistint_t *head)
 {
