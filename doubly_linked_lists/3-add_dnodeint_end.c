@@ -11,7 +11,7 @@
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-/*add a ne struct*/
+/*add a new struct*/
 dlistint_t *new;
 dlistint_t *temporary;
 
@@ -25,18 +25,18 @@ new->next = NULL;
 
 if (*head == NULL)
 {
-*head = new;
-temporary = *head;
+	new->prev = NULL;
+	*head = new;
 }
 else
 {
 	temporary = *head;
 	while (temporary->next != NULL)
 	{
-		temporary->prev = temporary;
 		temporary = temporary->next;
 	}
 	temporary->next = new;
+	new->prev = temporary;
 }
 
 return (new);
