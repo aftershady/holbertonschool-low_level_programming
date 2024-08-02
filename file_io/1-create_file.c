@@ -4,6 +4,12 @@
 #include <stdlib.h>
 #include <sys/stat.h>
 
+/**
+ * create_file - create a file empty or with text in it
+ * @filename: name of the file
+ * @text_content: text to be writed in file
+ * Return: 1 if succes -1 if error
+ */
 int create_file(const char *filename, char *text_content)
 {
 	ssize_t file, writed;
@@ -11,7 +17,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 	{
-		return -1;
+		return (-1);
 	}
 
 	file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
@@ -32,6 +38,6 @@ int create_file(const char *filename, char *text_content)
 	close(file);
 
 
-	return(1);
+	return (1);
 
 }
