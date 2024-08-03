@@ -7,6 +7,7 @@ int main(int argc, char *argv[])
 {
 	ssize_t file_to_cp, file_dest, readed, writed, size;
 	char *buffer;
+	size = 1024;
 
 	if (argc != 3)
 	{
@@ -18,19 +19,6 @@ int main(int argc, char *argv[])
 	if (file_to_cp == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
-
-	size = lseek(file_to_cp, 0, SEEK_END);
-	if (size == -1) {
-		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
-		close(file_to_cp);
-		exit(98);
-	}
-
-	if (lseek(file_to_cp, 0, SEEK_SET) == -1) {
-		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
-		close(file_to_cp);
 		exit(98);
 	}
 
@@ -86,5 +74,5 @@ int main(int argc, char *argv[])
 	}
 
 	free(buffer);
-	return (1);
+	return (0);
 }
