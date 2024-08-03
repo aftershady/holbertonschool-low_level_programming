@@ -10,7 +10,6 @@
 int main(int ac, char **av)
 {
     int res;
-av[2] = '\0';
     if (ac != 3)
     {
         dprintf(2, "Usage: %s filename text\n", av[0]);
