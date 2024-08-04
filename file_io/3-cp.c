@@ -3,16 +3,24 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+/**
+ * main - copy a file and put the content of the first file int it
+ * @argc: number of arguments
+ * @argv: pointer on table of arguments
+ * Description : read a file if she exist, copy his content in a buffer,
+ * and paste it in another file
+ * Return:  0
+ */
 int main(int argc, char *argv[])
 {
 	ssize_t file_to_cp, file_dest, readed, writed, size;
 	char *buffer;
-	size = 1024;
 
+	size = 1024;
 	if (argc != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
-		exit(97);
+	dprintf(2, "Usage: cp file_from file_to\n");
+	exit(97);
 	}
 
 	file_to_cp = open(argv[1], O_RDONLY);
