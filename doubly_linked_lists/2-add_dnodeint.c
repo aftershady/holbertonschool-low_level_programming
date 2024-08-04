@@ -26,6 +26,7 @@ if (!new)
 }
 
 new->n = n;
+new->prev = new;
 new->next = *head;
 new->prev = new;
 *head = new;
