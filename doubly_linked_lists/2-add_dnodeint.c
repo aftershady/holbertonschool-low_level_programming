@@ -12,9 +12,12 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-/*add a new struct*/
 dlistint_t  *new;
 
+if (head == NULL)
+{
+	return (head);
+}
 
 new = malloc(sizeof(dlistint_t));
 if (!new)
